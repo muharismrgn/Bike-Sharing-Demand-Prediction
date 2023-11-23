@@ -1,4 +1,4 @@
-# Bike-Sharing-Demand-Prediction
+# Bike Sharing Demand Prediction
 
 The bike sharing system is an innovation in bike rental that automates the entire process, from member registration, bike rental, to bike return. Through this system, users can easily rent bikes from a specific location and return them to another.
 
