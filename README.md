@@ -43,9 +43,17 @@ Project limitations involve a focus on weather, day, and time as the main predic
 
 - Based on the two experiments (without target transform and with target transform) conducted, 3 best models were selected for tuning including Catboost Regressor, XGBoost Regressor, and Support Vector Regressor. 
 
-- Catboost Regressor is still the best model after tuning and is used as the final model. With tuning parameters 'iterations': 1600, 'learning_rate': 0.05, 'depth': 8 obtained average performance results with MAE: 23, R2: 95.73%, and MAPE: 22.22%. 
+- Catboost Regressor is still the best model after tuning and is used as the final model. With tuning parameters 'iterations': 1500, 'learning_rate': 0.07, 'depth': 8 obtained average performance results with MAE: 22.75, R2: 95.57%, and MAPE: 22.81%. 
 
 - When predicting the testing data (unseen data) the performance results become better with MAE: 21.82, R2: 95.95%, MAPE: 22.81%. This indicates that the final model is good for predicting unseen data or stable for predicting other similar data.
+
+**`MODEL LIMITATION`**
+
+- The small range of values (1-50) is less reliable because the average error is quite large with 44% of the actual demand (data). However, we can justify this by looking at the MAE, where the average MAE in this range is about 5 points.
+
+- It can be concluded that this model may be less suitable for predicting small values, but it can reliably predict better on a larger scale of values. In addition, the model may also be less accurate for the range of predicted values outside the training data (1-970).
+
+- This model is also less reliable for predicting casual members because the MAPE is quite large 41.43% even though we can see from the MAE value which is relatively quite small, which is around 8.
 
 **`RECOMENDATION`**
 
