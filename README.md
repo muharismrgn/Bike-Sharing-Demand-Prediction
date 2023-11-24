@@ -62,3 +62,7 @@ Project limitations involve a focus on weather, day, and time as the main predic
 - Review the model evaluation metrics and ensure that the metrics used match the business objectives and demand characteristics of the bicycle. Consider using metrics such as MAPE (Mean Absolute Percentage Error) to predict a large range of values especially greater than 100 and MAE to predict a small range of values (1-50).
 
 - In-depth analysis to understand the causes of large underestimates or overestimates. Review whether there are external factors not included in the model, changes in user behavior, or policy changes that could affect demand patterns.
+
+**`DEPLOY`**
+link url : https://bikesharingprediction.streamlit.app/
+![image](https://github.com/muharismrgn/Bike-Sharing-Demand-Prediction/assets/143411521/7f238be3-0ef7-40d5-a67d-1c3a04a20e0d)
